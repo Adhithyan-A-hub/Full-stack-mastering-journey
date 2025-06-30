@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee's data</title>
+  </head>
+  <body style="font-size: 25px">
+    <h1 style="margin-left: 25%">EMPLOYEE DATA</h1>
+
+    <table border="5" style="margin-left: 9%">
+      <tr>
+        <th>Employee ID</th>
+        <th>Employee name</th>
+        <th>Designation</th>
+        <th colspan="2">Shift</th>
+      </tr>
+
+      <tr>
+        <td>2241</td>
+        <td id="emp1">Raja</td>
+        <td>TL</td>
+        <td rowspan="2">Full shift</td>
+        <td>Rotational shift</td>
+      </tr>
+
+      <tr>
+        <td>2216</td>
+        <td id="emp2">Pradeep</td>
+        <td>Supervisor</td>
+        <td>Night shift</td>
+      </tr>
+
+      <tr>
+        <td>2253</td>
+        <td id="emp3">Siddu</td>
+        <td>Assistant TL</td>
+        <td>Night shift</td>
+        <td rowspan="2">Rotational shift</td>
+      </tr>
+
+      <tr>
+        <td>2293</td>
+        <td id="emp4">Pooja</td>
+        <td rowspan="2">Line manager</td>
+        <td>Full shift</td>
+      </tr>
+
+      <tr>
+        <td>2245</td>
+        <td id="emp5">Vivek</td>
+        <td colspan="2">Night shift</td>
+      </tr>
+    </table>
+
+    <div style="margin-left: 9%">
+      <h2>Filter employee :</h2>
+
+      <ol>
+        
+        <li><a href="#emp1" id="emp1">Raja</a></li>
+        <li><a href="#emp2" id="emp2">Pradeep</a></li>
+        <li><a href="#emp3" id="emp3">Siddu</a></li>
+        <li><a href="#emp4" id="emp4">Pooja</a></li>
+        <li><a href="#emp5" id="emp5">Vivek</a></li>
+        
+      </ol>
+    </div>
+  </body>
+</html>
