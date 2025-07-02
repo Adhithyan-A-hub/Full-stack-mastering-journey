@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)http://127.0.0.1:5500/Task02.07.htm -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>Registration Form</title>
+</head>
+<body>
+
+  <h2 align="center">REGISTRATION FORM</h2>
+  <hr>
+
+  <form>
+    <table align="center" cellspacing="10">
+      <tbody><tr>
+        <td><label for="name">Name:</label></td>
+        <td><label for="dob">Date of Birth:</label></td>
+      </tr>
+      <tr>
+        <td><input type="text" id="name" name="name" fdprocessedid="xgeds9"></td>
+        <td><input type="date" id="dob" name="dob"></td>
+      </tr>
+
+      <tr>
+        <td><label for="address">Address:</label></td>
+        <td><label for="contact">Contact Number:</label></td>
+      </tr>
+      <tr>
+        <td><input type="text" id="address" name="address" fdprocessedid="sfbuhc"></td>
+        <td><input type="number" id="contact" name="contact" fdprocessedid="4rk7n"></td>
+      </tr>
+
+      <tr>
+        <td><label for="email">Email:</label></td>
+        <td><label for="occupation">Occupation:</label></td>
+      </tr>
+      <tr>
+        <td><input type="email" id="email" name="email" fdprocessedid="1mq4m8"></td>
+        <td><input type="text" id="occupation" name="occupation" fdprocessedid="c9wg"></td>
+      </tr>
+
+      <tr>
+        <td><label for="age">Age:</label></td>
+        <td><label>Gender:</label></td>
+        
+      </tr>
+      <tr>
+        <td><input type="number" id="age" name="age" fdprocessedid="ejy2cf"></td>
+        <td>
+          <input type="radio" id="male" name="gender" value="Male">
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="gender" value="Female">
+          <label for="female">Female</label>
+        </td>
+      </tr>
+             
+      
+      <tr>
+        <td><input type="text" id="civil" name="civil" fdprocessedid="mjx7kh"></td>
+        <td><input type="text" id="citizenship" name="citizenship" fdprocessedid="plo3o5"></td>
+      </tr>
+
+      <tr>
+        <td><label for="height">Height:</label></td>
+        <td><label for="weight">Weight:</label></td>
+      </tr>
+      <tr>
+        <td><input type="number" id="height" name="height" fdprocessedid="iafbj"></td>
+        <td><input type="number" id="weight" name="weight" fdprocessedid="yl8sxd"></td>
+      </tr>
+
+      <tr>
+        <td><label for="religion">Religion:</label></td>
+        <td><label for="language">Language:</label></td>
+      </tr>
+      <tr>
+        <td><input type="text" id="religion" name="religion" fdprocessedid="6t3n2"></td>
+        <td><input type="text" id="language" name="language" fdprocessedid="duw24i"></td>
+      </tr>
+
+      <tr>
+        <td><label for="father">Father's Name:</label></td>
+        <td><label for="foccup">Occupation:</label></td>
+      </tr>
+      <tr>
+        <td><input type="text" id="father" name="father" fdprocessedid="emrvam"></td>
+        <td><input type="text" id="foccup" name="foccup" fdprocessedid="rfaax"></td>
+      </tr>
+
+      <tr>
+        <td><label for="mother">Mother's Name:</label></td>
+        <td><label for="moccup">Occupation:</label></td>
+      </tr>
+      <tr>
+        <td><input type="text" id="mother" name="mother" fdprocessedid="ikalb8"></td>
+        <td><input type="text" id="moccup" name="moccup" fdprocessedid="z2ldd8"></td>
+      </tr>
+
+      <tr>
+        <td><label for="emergency">Emergency Contact Person:</label></td>
+        <td><label for="econtact">Contact Number:</label></td>
+      </tr>
+      <tr>
+        <td><input type="text" id="emergency" name="emergency" fdprocessedid="f3ehv"></td>
+        <td><input type="number" id="econtact" name="econtact" fdprocessedid="vazm2i"></td>
+      </tr><tr></tr><tr></tr>
+
+      <tr>
+        
+        <td>          
+                
+             <button align="center" fdprocessedid="0m4voi">
+            Submit</button></td>
+      </tr>
+    </tbody></table>
+  </form>
+
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+<span id="PING_IFRAME_FORM_DETECTION" style="display: none;"></span></body></html>
