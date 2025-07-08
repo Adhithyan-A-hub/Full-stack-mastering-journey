@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+ *{
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .main{
+        height: 600px;
+        width: 1000px;
+        border: solid black 3px;
+
+        display: grid;
+        grid-template-areas: 
+        "cell1 cell2 cell3"
+        "cell4 cell5 cell6"
+        "cell7 cell8 cell9";
+        gap: 5px;
+
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+
+    }
+
+    .common-class{
+        color: aliceblue;
+        font-size: 30px;
+        text-align: center;
+        padding-top:20% ;
+    }
+
+    .class1{
+        background-color: skyblue;
+        grid-area: cell1;
+    }
+
+    .class2{
+        background-color: orangered;
+        grid-area: cell2;
+    }
+
+    .class3{
+        background-color: rgb(32, 95, 230);
+        grid-area: cell3;
+    }
+    .class4{
+        background-color: rgb(211, 167, 48);
+        grid-area: cell4;
+    }
+    .class5{
+        background-color: rgb(129, 59, 221);
+        grid-area: cell5;
+    }
+    .class6{
+        background-color: rgb(6, 168, 6);
+        grid-area: cell6;
+    }
+    .class7{
+        background-color: orange;
+        grid-area: cell7;
+    }
+    .class8{
+        background-color: rgb(54, 173, 202);
+        grid-area: cell8;
+    }
+    .class9{
+        background-color: brown;
+        grid-area: cell9;
+    }
+
+</style>
+<body>
+    
+    <div class="main">
+        <div class="common-class class1">DIV1</div>
+        <div class="common-class class2">DIV2</div>
+        <div class="common-class class3">DIV3</div>
+        <div class="common-class class4">DIV4</div>
+        <div class="common-class class5">DIV5</div>
+        <div class="common-class class6">DIV6</div>
+        <div class="common-class class7">DIV7</div>
+        <div class="common-class class8">DIV8</div>
+        <div class="common-class class9">DIV9</div>
+    </div>
+</body>
+</html>
