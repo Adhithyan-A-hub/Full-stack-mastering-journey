@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>3x2 Flex Layout</title>
+  <style>
+    .wrapper-1 {
+      display: flex;
+      flex-wrap: wrap;
+      width: 250px;           
+      height: 350px;          
+      gap: 10px;              
+      border: 2px dashed gray;
+      padding: 10px;
+    }
+
+    .box {
+      flex-basis: 44%;  
+      height: 100px; 
+      border-radius: 15px;
+      display: flex;
+    }
+
+    .pink {
+      background-color: mediumorchid;
+    }
+
+    .orange {
+      background-color: darkorange;
+    }
+
+
+    /* Second */
+
+    .wrapper-2{
+
+        height: 100px;
+        width: 300px;
+        margin: 200px 0px 0px 200px;
+
+        display: flex;
+        flex-wrap: wrap;
+        gap: 25px;
+        border: dotted grey 3px;
+        justify-content: center;
+        align-content: space-around;
+    }
+
+    .wrapper-2 div{
+        display: flex;
+        flex-basis: 100px;
+        height: 80px;
+        border-radius: 15px;
+        
+    }
+
+    .green{
+        background-color: green;
+    }
+    .yellow{
+        background-color: yellow;
+    }
+
+    .wrapper-3{
+      display: flex;
+      height: 400px;
+      width: 300px;
+      border: dotted grey 5px;
+      align-items: center;
+      justify-content: space-evenly;
+      margin: -680px 0px 0px 400px;
+    }
+
+    .wrapper-3>div{
+      display: flex;
+      flex-basis: 70px;
+      border-radius: 25px;
+
+      
+    }
+
+    .skyblue{
+      background: skyblue;
+      height: 300px;
+    }
+
+    .orangered{
+      background-color: orangered;
+      height: 150px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="wrapper-1">
+    <div class="box pink"></div>
+    <div class="box orange"></div>
+    <div class="box orange"></div>
+    <div class="box pink"></div>
+    <div class="box pink"></div>
+    <div class="box orange"></div>
+  </div>
+
+  <div class="wrapper-2">
+    <div class="yellow"></div>
+    <div class="green"></div>
+  </div>
+
+  <div class="wrapper-3">
+    <div class="skyblue"></div>
+    <div class="orangered"></div>
+    <div class="skyblue"></div>
+  </div>
+
+  
+</body>
+</html>
