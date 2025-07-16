@@ -14,6 +14,7 @@
         border: solid black 2px;
         background-color: black;
         position: relative;
+        border-radius: 150px;
     }
 
     input{
@@ -24,8 +25,10 @@
         border-radius: 20px;
         position: absolute;
         top: 5rem;
-        left: 20rem;
+        left: 21rem;
         text-align: center;
+        font-weight: bolder;
+        font-size: 1.2rem;
     }
 
     input::placeholder{
@@ -41,11 +44,14 @@
 
     #rslt{
         height: 2rem;
-        display: inline-block;
+        width:20rem;
+        display: inline-flex;
         color: white;
         position: absolute;
         top: 12rem;
-        left: 13rem;
+        left: 7.5rem;
+        align-items: center;
+        justify-content: center;
     }
 
     button{
