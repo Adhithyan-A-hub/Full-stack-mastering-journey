@@ -6,7 +6,7 @@ const rl = readline.createInterface({
 });
 
 function check() {
-  rl.question("/n Enter a number: ",
+  rl.question("\n Enter a number: ",
     function (input) {
       const number = Number(input); // convert string to number
 
