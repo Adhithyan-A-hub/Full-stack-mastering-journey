@@ -1,0 +1,79 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 25px;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.calcbox{
+    display: inline-block;
+    border: solid black 2px;
+    height: 16rem;
+    width: 20rem;
+    position: relative;
+
+}
+
+#slct{
+    all: unset;
+    display: inline-block;
+    height: 1rem;
+    width: 8rem;
+    border: solid black 4px;
+    border-radius: 1rem;
+    position: absolute;
+    top: 2rem;
+    left:5rem;
+    text-align: center;
+    padding: .5rem;
+}
+#inp1{
+    all: unset;
+    display: inline-block;
+    height: 1rem;
+    width: 8rem;
+    border: solid black 4px;
+    border-radius: 1rem;
+    position: absolute;
+    top: 6rem;
+    left:5rem;
+    text-align: center;
+    padding: .5rem;
+}
+
+button{
+    all: unset;
+    border: solid black 5px;
+    border-radius: 1rem;
+    height: 1.5rem;
+    width:6rem;
+    text-align: center;
+    padding: .2rem;
+    position: absolute;
+    bottom: 2rem;
+    left: 6.5rem;
+}
+
+
+
+#rslt{
+    height: 2rem;
+    width: 10rem;
+    position: absolute;
+    top: 9rem;
+    left:5rem;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.2rem;
+}

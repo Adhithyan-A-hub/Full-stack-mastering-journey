@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your cart</title>
+    <link rel="stylesheet" href="cart.css">
+    <script src="cart.js"></script>
+</head>
+<body>
+    
+    <div id="cartmenu">
+
+<!--         <input type="text" id="prdct" placeholder="Enter product name here" required>
+ -->
+        <select name="" id="prdct">
+            <option value="Phone">Phone</option>
+            <option value="Laptop">Laptop</option>
+            <option value="Tv">Tv</option>
+        </select>
+     <button id="sbmt">Add to cart</button>
+     <button id="shw">Open cart</button>
+    </div>
+
+    <div id="prdct-dtl">
+
+        <input type="text" id="pr-nm" placeholder="Enter brand name" required>
+        <input type="number" id="pr-prc" placeholder="Enter price" required>
+        <button id="sbmt-dtl">Add product</button>
+        <button id="cls">Close</button>
+        
+    </div>
+
+    <!-- Cart Details updation ongoing !!! -->
+
+    <div id="crt-lst">
+
+        <ul id="ctgrs">
+            <li  id="items-type">Phone</li>
+            <li  id="items-type2" >Laptop</li>
+            <li  id="items-type3" >Tv</li>
+        </ul>
+
+        <table>
+            <tr>
+                <td>Product</td>
+                <td>value</td>
+            </tr>
+            <tr>
+                <td id="td1"></td>
+                <td id="td2"></td>
+            </tr>
+            <tr>
+                <td id="td3"></td>
+                <td id="td4"></td>
+            </tr>
+            <tr>
+                <td id="td5"></td>
+                <td id="td6"></td>
+            </tr>
+        </table>
+        <button id="cls2">Close</button>
+
+
+    </div>
+
+    
+</body>
+</html>
