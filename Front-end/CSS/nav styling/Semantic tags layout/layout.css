@@ -1,0 +1,94 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    font-size: 20px;
+    display: grid;
+    grid-template-columns: 15% 30% 27% 27%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: 
+    "e1 e2 e3 e4"
+    "e1 e2 e3 e4";
+}
+
+.sidebar{
+    display: flex;
+    height: 100%;
+    width:100%;
+    justify-content: center;
+    align-content: space-evenly;
+    background-color: black;
+    color: white;
+    grid-area: e1;
+}
+
+
+.nav-links{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav-links a{
+    all: unset;
+    display: block;
+    padding: 10px 50px;
+    transition: background 0.5s;
+
+}
+
+.nav-links a:hover,
+.nav-links a.active{
+    background-color: grey;
+    color: black;
+}
+
+main{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-color: grey;
+    grid-area: e2;
+    flex-wrap: wrap;
+
+}
+
+main h1{
+    padding: 150px;
+    height: 300px;
+    width: 100%;
+}
+
+main p{
+    display: flex;
+    width: 100%;
+    color: white;
+    justify-content: center;
+    padding-left: 20px;   
+}
+
+.div1{
+    display: flex;
+    grid-area: e3;
+    background-color: beige;
+    align-items: center;
+    justify-content: center;
+    color: chocolate;
+}
+
+.div2{
+    display: flex;
+    grid-area: e4;
+    background-color: chocolate;
+    align-items: center;
+    justify-content: center;
+    color: beige;
+}
